@@ -2,7 +2,8 @@
     <div>
         <h1>Another Counter...</h1>
         <button class="btn btn-primary" @click="increment">Increment</button>
-        <button class="btn btn-primary" @click="decrement">Decrement</button>
+        <button class="btn btn-primary" @click="decrement">Decrement</button>        
+        <button class="btn btn-primary" @click="asyncDecrement">Async Decrement</button>
     </div>
 </template>
 
@@ -13,7 +14,8 @@ import { mapActions } from 'vuex'
         methods: {
           ...mapActions([
               'increment',
-              'decrement'
+              'decrement',
+              'asyncDecrement'
           ])
         }
     }
