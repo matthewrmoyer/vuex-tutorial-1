@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h1>Another Counter...</h1>
         <button class="btn btn-primary" @click="increment">Increment</button>
         <button class="btn btn-primary" @click="decrement">Decrement</button>
     </div>
@@ -7,6 +8,7 @@
 
 <script>
 import { mapMutations } from 'vuex'
+
     export default {
         methods: {
           ...mapMutations([
