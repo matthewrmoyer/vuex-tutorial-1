@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapActions } from 'vuex'
 
     export default {
         methods: {
-          ...mapMutations([
+          ...mapActions([
               'increment',
               'decrement'
           ])
