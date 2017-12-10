@@ -9,6 +9,9 @@
                 <hr>
                 <app-counter></app-counter>
                 <app-another-counter></app-another-counter>
+                <hr>
+                <app-value-get-and-set-properties></app-value-get-and-set-properties>
+                
                 
             </div>
         </div>
@@ -20,6 +23,8 @@
     import AnotherCounter from './components/AnotherCounter.vue';
     import Result from './components/Result.vue';
     import AnotherResult from './components/AnotherResult.vue';
+    import ValueGetAndSetProperties from './components/ValueGetAndSetProperties.vue';
+    
     
 
     export default {
@@ -29,6 +34,9 @@
             
             appResult: Result,
             appAnotherResult: AnotherResult,
+
+            appValueGetAndSetProperties: ValueGetAndSetProperties
+            
             
         }
     }
