@@ -1,21 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import * as getters from './getters'
-import * as actions from './actions'
-import * as mutations from './mutations'
-import counter from './modules/counter'
+import counter from './modules/counter/store'
+import value from './modules/value/store'
 
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
-    state: {
-        value: 0
-    },
-    getters,
-    mutations,
-    actions,
+    state: {},
     modules: {
-        counter
+        counter,
+        value
     }
 })
