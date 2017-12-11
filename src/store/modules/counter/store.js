@@ -7,6 +7,7 @@ const state = {
 }
 
 const module = {
+    namespaced: true,
     state,
     getters,
     mutations,

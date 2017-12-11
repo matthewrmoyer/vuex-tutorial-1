@@ -12,7 +12,7 @@
 import { mapGetters } from 'vuex'
     export default {
         computed: {
-            ...mapGetters([
+            ...mapGetters('counter', [
                 'doubleCounter',
                 'stringCounter'
             ])

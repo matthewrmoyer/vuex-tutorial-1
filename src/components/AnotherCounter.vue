@@ -14,7 +14,7 @@ import { mapActions } from 'vuex'
 
     export default {
         methods: {
-          ...mapActions([
+          ...mapActions('counter', [
               'increment',
               'asyncIncrementBy',
               'decrement',

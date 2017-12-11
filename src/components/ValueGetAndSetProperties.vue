@@ -12,10 +12,10 @@ import{ mapActions } from 'vuex'
         computed: {
             value: {
                 get() {
-                    return this.$store.getters.value
+                    return this.$store.getters['value/value']
                 },
                 set() {
-                    this.$store.dispatch('updateValue', event.target.value)
+                    this.$store.dispatch('value/updateValue', event.target.value)
                 }
             }
         }
